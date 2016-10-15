@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" --><!-- package="com.example.indrajit.datamanipulation"> --><!-- <application --><!-- android:allowBackup="true" --><!-- android:icon="@mipmap/ic_launcher" --><!-- android:label="@string/app_name" --><!-- android:supportsRtl="true" --><!-- android:theme="@style/AppTheme"> --><!-- <activity android:name=".MainActivity"> --><!-- <intent-filter> --><!-- <action android:name="android.intent.action.MAIN" /> --><!-- <category android:name="android.intent.category.LAUNCHER" /> --><!-- </intent-filter> --><!-- </activity> --><!-- <activity android:name=".AllProductsActivity" /> --><!-- <activity android:name=".NewProductActivity" /> --><!-- </application> --><!-- </manifest> -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.indrajit.datamanipulation">
+
+    <uses-sdk android:minSdkVersion="8" />
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:configChanges="keyboardHidden|orientation"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- All Product Activity -->
+
+
+        <!-- Add Product Activity -->
+        <activity
+            android:name=".NewProductActivity"
+            android:label="Add New Product" />
+        <!-- <meta-data -->
+        <!-- android:name="android.support.PARENT_ACTIVITY" -->
+        <!-- android:value="com.example.indrajit.datamanipulation.MainActivity" /> -->
+        <!-- </activity>> -->
+        <activity android:name=".AllProductsActivity" />
+        <activity android:name=".EditProductActivity" />
+        <activity android:name=".UsersAdapter"></activity>
+    </application>
+
+</manifest>
