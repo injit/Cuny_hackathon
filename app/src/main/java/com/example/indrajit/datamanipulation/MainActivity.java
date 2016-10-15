@@ -18,8 +18,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends Activity {
+import com.example.indrajit.datamanipulation.helper.SessionManager;
 
+public class MainActivity extends Activity {
+    private SessionManager session;
     Button btnViewProducts;
     Button btnNewProduct;
     Button customadapt;
@@ -27,6 +29,13 @@ public class MainActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+        session = new SessionManager(getApplicationContext());
+
+        if (!session.isLoggedIn()) {
+            logoutUser();
+        }
         setContentView(R.layout.activity_main);
 
         getActionBar().setTitle("Data Base Items");
@@ -67,5 +76,16 @@ public class MainActivity extends Activity {
 //            }
 //        });
 
+
+
+    }
+    private void logoutUser() {
+        session.setLogin(false);
+
+
+        // Launching the login activity
+        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
