@@ -36,13 +36,13 @@ public class AllProductsActivity extends ListActivity {
     ArrayList<HashMap<String, String>> productsList;
 
     // url to get all products list
-    private static String url_all_products = "http://10.0.2.2:8888/get_all_products.php";
+    private static String url_all_products = "http://codingmechanic.com/get_clubs2.php";
 
     // JSON Node names
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_PRODUCTS = "products";
-    private static final String TAG_PID = "pid";
-    private static final String TAG_NAME = "name";
+    private static final String TAG_PID = "club_id";
+    private static final String TAG_NAME = "club_name";
 
     // products JSONArray
     JSONArray products = null;

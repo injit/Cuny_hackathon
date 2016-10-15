@@ -130,7 +130,7 @@ public class EditProductActivity extends Activity {
                     int success;
 
 
-                    try {
+//                    try {
                         // Building Parameters
 
                         List<NameValuePair> params = new ArrayList<NameValuePair>();
@@ -138,7 +138,7 @@ public class EditProductActivity extends Activity {
 
                         // getting product details by making HTTP request
                         // Note that product details url will use GET request
-                        JSONObject json = jsonParser.makeHttpRequest(url_product_details, "GET", params);
+//                        JSONObject json = jsonParser.makeHttpRequest(url_product_details, "GET", params);
 
 //                     List<NameValuePair> params = new ArrayList<NameValuePair>();
 //            // getting JSON string from URL
@@ -147,35 +147,35 @@ public class EditProductActivity extends Activity {
 
 
                         // check your log for json response
-                        Log.d("Single Product Details", json.toString());
+//                        Log.d("Single Product Details", json.toString());
+//
+//                        // json success tag
+//
+//                        success = json.getInt(TAG_SUCCESS);
+//                        if (success == 1) {
+//                            // successfully received product details
+//                            JSONArray productObj = json.getJSONArray(TAG_PRODUCT); // JSON Array
+//
+//                            // get first product object from JSON Array
+//                            JSONObject product = productObj.getJSONObject(0);
+//
+//                            // product with this pid found
+//                            // Edit Text
+//                            txtName = (EditText) findViewById(R.id.inputName);
+//                            txtPrice = (EditText) findViewById(R.id.inputPrice);
+//                            txtDesc = (EditText) findViewById(R.id.inputDesc);
+//
+//                            // display product data in EditText
+//                            txtName.setText(product.getString(TAG_NAME));
+//                            txtPrice.setText(product.getString(TAG_PRICE));
+//                            txtDesc.setText(product.getString(TAG_DESCRIPTION));
 
-                        // json success tag
-
-                        success = json.getInt(TAG_SUCCESS);
-                        if (success == 1) {
-                            // successfully received product details
-                            JSONArray productObj = json.getJSONArray(TAG_PRODUCT); // JSON Array
-
-                            // get first product object from JSON Array
-                            JSONObject product = productObj.getJSONObject(0);
-
-                            // product with this pid found
-                            // Edit Text
-                            txtName = (EditText) findViewById(R.id.inputName);
-                            txtPrice = (EditText) findViewById(R.id.inputPrice);
-                            txtDesc = (EditText) findViewById(R.id.inputDesc);
-
-                            // display product data in EditText
-                            txtName.setText(product.getString(TAG_NAME));
-                            txtPrice.setText(product.getString(TAG_PRICE));
-                            txtDesc.setText(product.getString(TAG_DESCRIPTION));
-
-                        }else{
-                            // product with pid not found
-                        }
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
+//                        }else{
+//                            // product with pid not found
+//                        }
+//                    } catch (JSONException e) {
+//                        e.printStackTrace();
+//                    }
                }
             });
 //
