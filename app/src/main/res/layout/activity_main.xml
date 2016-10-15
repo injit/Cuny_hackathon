@@ -4,30 +4,32 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:background="@android:color/holo_green_light">
+    android:background="@android:color/background_light">
 
     <!--  Sample Dashboard screen with Two buttons -->
     <!--  Button to view all products screen -->
     <Button android:id="@+id/btnViewProducts"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="View Products"
-        android:layout_marginTop="25dip"
-        android:background="@android:color/holo_red_dark"/>
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="View Clubs"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="@android:color/holo_blue_light"/>
 
     <!--  Button to create a new product screen -->
     <Button android:id="@+id/btnCreateProduct"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Add New Products"
-        android:layout_marginTop="25dip"
-        android:background="@android:color/holo_red_dark"/>
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Events"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+
+        android:background="@android:color/holo_blue_light"/>
 
     <Button android:id="@+id/customadapt"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="CustomAdapt"
-        android:layout_marginTop="25dip"
-        android:background="@android:color/holo_red_dark"/>
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Log Out"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+
+        android:background="@android:color/holo_blue_light"/>
 
 </LinearLayout>
