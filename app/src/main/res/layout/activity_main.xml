@@ -9,25 +9,27 @@
     <!--  Sample Dashboard screen with Two buttons -->
     <!--  Button to view all products screen -->
     <Button android:id="@+id/btnViewProducts"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="View Products"
-        android:layout_marginTop="25dip"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="View Clubs"
+
         android:background="@android:color/holo_red_dark"/>
 
     <!--  Button to create a new product screen -->
     <Button android:id="@+id/btnCreateProduct"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Add New Products"
-        android:layout_marginTop="25dip"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Events"
+
+
         android:background="@android:color/holo_red_dark"/>
 
     <Button android:id="@+id/customadapt"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="CustomAdapt"
-        android:layout_marginTop="25dip"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Log Out"
+
+
         android:background="@android:color/holo_red_dark"/>
 
 </LinearLayout>
